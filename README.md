@@ -4,7 +4,7 @@
 
 ------------------------------------------------------------------------------------------------------------------
 
-- pentru task-urile de nivel 1, thread-urile se vor ocupa de citirea comenzilor si
+• pentru task-urile de nivel 1, thread-urile se vor ocupa de citirea comenzilor si
 adaugarea a cate nr_produse task-uri pentru fiecare comanda in pool-ul de task-uri de 
 nivel 2. Constructorul pentru clasa ce prelucreaza task-urile de nivel 1 va avea ca 
 argumente BufferedReader-ul pt fisierul de intrare pentru comenzi, BufferedWriter-ul 
@@ -19,7 +19,7 @@ executarea task-ului sau, thread-ul de nivel 2 va da release la semaforul specif
 din care facea parte produsul prelucrat, iar semaforul se va debloca abia dupa ce
 nr_produse din comanda au fost prelucrate.
 
--pentru task-urile de nivel 2, thread-urile se vor ocupa de prelucarea unui produs pe 
+• pentru task-urile de nivel 2, thread-urile se vor ocupa de prelucarea unui produs pe 
 rand. Acestea vor primi de la thread-urile de nivel 1 indicele produsului din comanda 
 si numele comenzii de care trebuie sa se ocupe (pentru a asigura astfel ca prelucrarea
 produselor se realizeaza in ordine), BufferedWriter-ul pentru fisierul de iesire pt 
